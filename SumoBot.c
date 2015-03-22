@@ -25,8 +25,8 @@ enum DriveState
 
 enum DriveState state = SEARCHING;
 uint16_t count = 0; 
-bool ADCFlag = false;
-bool UARTFlag = false;
+volatile bool ADCFlag = false;
+volatile bool UARTFlag = false;
 uint8_t data;
 uint16_t ultraSonic[3];	
 
